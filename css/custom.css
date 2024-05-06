@@ -1,0 +1,119 @@
+/*----------------------------------------------------------------
+
+	Template Name: Rainfo - Minimal Creative Portfolio for Freelancers & Agencies 
+	Version: 1.0
+
+-------------------------------------------------------------------------*/
+
+.d-none{
+	display: none !important;
+}
+.d-flex{
+	display: flex !important;
+}
+.d-flex-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+span.menu-text.open-text ,
+.open span.menu-text.close-text {
+	opacity: 0;
+}
+#menu-toggle .hamburger-wrap #hamburger span {
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin-bottom: 5px;
+	position: relative;
+}
+#menu-toggle.open .hamburger-wrap #hamburger span:nth-child(1) {
+	width: 100%;
+  	transform: rotate(-45deg) translate(-5px, 6px);
+}
+#menu-toggle.open .hamburger-wrap #hamburger span:nth-child(2) {
+  	opacity: 0;
+}
+#menu-toggle.open .hamburger-wrap #hamburger span:nth-child(3) {
+  	transform: rotate(45deg) translate(-5px, -6px);
+  	width: 100%;
+}
+
+.slider-container .slide-content .txt-wrapper h2 {
+	font-size: 62px;
+}
+.story-content .content p {
+	color: #222;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: justify;
+}
+.slider-container .slide-content.txt {
+    padding: 0 7.5%;
+}
+.rn-plr {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.section-ptb-xl {
+	padding-top: 15%;
+	padding-bottom: 15%; 
+}
+
+
+.static-breadcaump {
+    padding: 5% 0 7.5% 0; 
+}
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	padding: 10% 7.5%;
+	margin-top: 0px;
+	position: relative;
+	z-index: 8;
+	top: -100px;
+	margin-bottom: -100px;
+}
+.contact-wrapper {
+	padding: 5px 15% 7.5%;
+}
+#googleMap {
+	width: 100%;
+	max-height: 500px;
+	min-height: 300px;
+}
+
+
+
+
+/* ==================== Responsive Css ==========================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.slider-container .slide-content.txt {
+		padding: 0 7.5%;
+	}
+	.static-breadcaump {
+		padding: 5% 0 12.5% 0; 
+	}
+	.contact-wrapper {
+		padding: 5px 2.5% 5%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.rn-story-right.w-50, .rn-award-right.w-50, .rn-service-left.w-50, .rn-blog-left.w-50 {
+        width: 100% !important;
+    }
+	.slider-container .slide-content.txt {
+		padding: 0%;
+	}
+	.static-breadcaump {
+		padding: 7.5% 0; 
+	}
+    .contact-wrapper {
+        padding: 5px 5% 5%;
+	}
+}
