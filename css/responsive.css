@@ -1288,6 +1288,10 @@
     .footer-top {
         padding: 65px 0px;
     }
+    .footerbottom-left p,
+    .footerbottom-right p {
+        text-align: center !important;
+    }
     .blog-content-body-quotation {
         padding: 30px 35px;
     }

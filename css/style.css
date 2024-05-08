@@ -1749,7 +1749,7 @@ header {
 }
 
 .servcie-three-contents {
-    padding-left: 230px;
+    padding-left: 5%;
 }
 
 .service-three-stroke-item-heading {
@@ -3097,6 +3097,16 @@ header {
 }
 .footer-two-form ::-ms-input-placeholder {
     color: #6a6a6a;
+}
+.footerbottom-left a,
+.footerbottom-right a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+.footerbottom-left a:hover,
+.footerbottom-right a:hover {
+    color: var(--orange-color);
 }
 
 
