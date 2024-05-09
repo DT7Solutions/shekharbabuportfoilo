@@ -13,7 +13,7 @@
         nav: false,
         center: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         dots: true,
         responsive: {
@@ -68,12 +68,12 @@
         nav: false,
         center: true,
         autoplay: true,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 1500,
         autoplayHoverPause: true,
-        dots: true,
+        dots: false,
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
                 items: 3

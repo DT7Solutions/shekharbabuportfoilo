@@ -704,7 +704,7 @@
         padding-left: 0;
     }
 
-    .portfolio-massonary-four-items:nth-child(2) {
+    /* .portfolio-massonary-four-items:nth-child(2) {
         grid-column: auto
     }
 
@@ -714,6 +714,15 @@
 
     .portfolio-massonary-items:nth-child(8) {
         grid-column: auto;
+    } */
+    .portfolio-massonary-items:nth-child(1),
+    .portfolio-massonary-items:nth-child(5),
+    .portfolio-massonary-items:nth-child(9) {
+        grid-column: auto
+    }
+    .portfolio-massonary-items:nth-child(4),
+    .portfolio-massonary-items:nth-child(8) {
+        grid-column: auto
     }
 
     .portfolio-massonary-container {

@@ -32,7 +32,7 @@ $(function () {
     // CONFIG
     let visibilityIds = ['#counters_1', '#counters_2', '#counters_3']; //must be an array, could have only one element
     let counterClass = '.counter';
-    let defaultSpeed = 3000; //default value
+    let defaultSpeed = 1500; //default value
 
     // END CONFIG
 

@@ -207,6 +207,9 @@ textarea {
     opacity: 1;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
 
 .orange-btn {
     color: #fff;
@@ -1758,7 +1761,6 @@ header {
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #6060605d;
-    margin-left: 5%;
 }
 
 .service-three-item-heading {
@@ -1796,19 +1798,26 @@ header {
     padding: 65px 0px;
 }
 
-.journey-education,
-.journey-skills {
+.journey-content {
     padding: 33px;
     border-radius: 6px;
 }
-
+.journey-img {
+    border-radius: 10%;
+    scale: 1.25;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.journey-content p {
+    text-indent: 2.5em;
+    text-align: justify;
+}
 .journey-first-item {
-    padding-right: 78px;
+    padding-right: 2.5%;
 }
 
 .journey-second-item {
-    padding-right: 39px;
-    padding-left: 50px;
+    padding-right: 2.5%;
+    padding-left: 1%;
     position: relative;
 }
 
@@ -1819,7 +1828,7 @@ header {
 .journey-second-item::before {
     content: '';
     position: absolute;
-    left: -20px;
+    left: -1.25%;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
@@ -1827,15 +1836,14 @@ header {
     height: 90%;
     background-color: #D1D1D1;
 }
-
 .journey-second-item::after {
     content: '';
     position: absolute;
-    right: -20px;
+    right: -1%;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: 1px;
+    width: 0px;
     height: 90%;
     background-color: #D1D1D1;
 }
@@ -1860,18 +1868,24 @@ header {
 }
 
 .journey-topic-one {
-    top: 110px;
-    margin-left: 23px;
+    top: 0%;
+    margin-left: 13%;
 }
-
 .journey-topic-two {
-    top: 350px;
-    margin-left: 23px;
+    top: 15%;
+    margin-left: 13%;
 }
-
 .journey-topic-three {
-    bottom: 85px;
-    margin-left: 23px;
+    top: 30%;
+    margin-left: 13%;
+}
+.journey-topic-four {
+    bottom: 42.5%;
+    margin-left: 13%;
+}
+.journey-topic-five {
+    bottom: 12.5%;
+    margin-left: 13%;
 }
 
 .journey-topics::before {
@@ -2031,9 +2045,13 @@ header {
 }
 
 .testimonial-card {
-    padding: 40px 30px;
+    display: flex;
+    min-height: 325px;
+    max-height: 350px;
+    padding: 5% 7.5%;
     border-radius: 6px;
     background-color: #FFFAF7;
+    flex-wrap: wrap;
 }
 
 .testimonial-card:hover {
@@ -2797,14 +2815,22 @@ header {
     grid-gap: 24px;
 }
 
-.portfolio-massonary-four-items:nth-child(2) {
+/* .portfolio-massonary-four-items:nth-child(2) {
     grid-column: 2/4
 }
-
 .portfolio-massonary-two-items:nth-child(1) {
     grid-column: 1/3
 }
+.portfolio-massonary-items:nth-child(8) {
+    grid-column: 2/4
+} */
 
+.portfolio-massonary-items:nth-child(1),
+.portfolio-massonary-items:nth-child(5),
+.portfolio-massonary-items:nth-child(9) {
+    grid-column: 1/3
+}
+.portfolio-massonary-items:nth-child(4),
 .portfolio-massonary-items:nth-child(8) {
     grid-column: 2/4
 }
@@ -3244,7 +3270,7 @@ header {
 .accordion button .icon {
   display: inline-block;
   position: absolute;
-  top: 18px;
+  top: 20%;
   right: 0;
   width: 22px;
   height: 22px;
