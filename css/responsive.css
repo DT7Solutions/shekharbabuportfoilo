@@ -1104,7 +1104,7 @@
     }
 
     .partners .owl-carousel .owl-item img {
-        width: 100px;
+        width: 100%;
     }
 
     .partners .owl-theme .owl-nav.disabled+.owl-dots {
