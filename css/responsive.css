@@ -167,7 +167,7 @@
         display: none;
     }  */
     .home-one-title {
-        font-size: 60px;
+        font-size: 50px;
         padding-right:12.5%;
     }
 }
@@ -514,7 +514,8 @@
     }
 
     .home-banner-img {
-        width: 75%;
+        width: 95%;
+        margin-right: 0%;
     }
 
     .home-banner-shape {
