@@ -13,6 +13,7 @@
         height: 700px;
     }
     .home-one-title {
+        font-size: 80px;
         padding-right: 18%;
     }
 
@@ -29,6 +30,7 @@
         height: 500px;
     }
     .home-one-title {
+        font-size: 70px;
         padding-right: 10%;
     }
 }
