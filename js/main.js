@@ -73,7 +73,7 @@
         dots: false,
         responsive: {
             0: {
-                items: 3
+                items: 1
             },
             600: {
                 items: 3
@@ -286,9 +286,6 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
 
 // EMAIL JS CONTACT FORM 
-// User: sekharababups@gmail.com 
-// PW: Dt7@2021
-
 function Send() {
     if (document.getElementById("name").value == "") {
         alert("Please enter your name");
@@ -337,8 +334,11 @@ function Send() {
             alert("Sorry ...!, " + params.name + ". Oops! Something went wrong. Please try again later.");
         });
     return false;
-  /* 
-  // Email js Template Form Design Code
+/* 
+    // EMAIL JS CREDENTIALS
+    // User: sekharababups@gmail.com 
+    // PW: Dt7@2021
+    // Email js Template Form Design Code
     <p>&nbsp;</p>
     <p>You got a new message from {{name}}:</p>
         <p>Email: {{email}}</p>

@@ -29,13 +29,26 @@
     .portfolio-fullwidth .portfolio-massonary-four-items img {
         height: 500px;
     }
+    .home-banner .home-banner-img{
+        max-height: 700px;
+    }
     .home-one-title {
         font-size: 70px;
         padding-right: 10%;
     }
+    .logo img {
+        scale: 1.5;
+        width: 100%;
+    }
+    .journey-topic-item::before {
+        left: -35%;
+    }
 }
 /* responsive code for small desktop */
 @media only screen and (max-width: 1536px) {
+    .home-banner .home-banner-img{
+        max-height: 600px;
+    }
     .sidebar-navigation {
         margin-top: 100px;
     }
@@ -93,6 +106,12 @@
 
 /* responsive code for big medium laptop*/
 @media only screen and (max-width: 1396px) {
+    .journey-topic-item::before {
+        left: -55%;
+    }
+    .home-banner .home-banner-img{
+        max-height: 500px;
+    }
     .partner-list-container .owl-theme .owl-stage {
         left: 95px;
     }
@@ -151,6 +170,7 @@
         height: 480px;
     }
     .logo img {
+        scale: 1.2;
         width: 100%;
     }
     /* header .orange-btn {
@@ -504,6 +524,9 @@
     
     .home-banner {
         padding-bottom: 50px;
+    }
+    .home-banner .home-banner-img{
+        max-height: 100%;
     }
 
     .home-two-banner-texts {
@@ -1054,7 +1077,7 @@
 
     h1,
     .h1 {
-        font-size: 42.5px;
+        font-size: 42px;
     }
 
     .h1-small {
