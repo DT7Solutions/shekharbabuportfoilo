@@ -269,10 +269,12 @@
 
 })(jQuery);
 
-    //  FAQS 
-    const items = document.querySelectorAll('.accordion button');
-    function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
+
+
+//  FAQS 
+const items = document.querySelectorAll('.accordion button');
+function toggleAccordion() {
+const itemToggle = this.getAttribute('aria-expanded');
     for (i = 0; i < items.length; i++) {
         items[i].setAttribute('aria-expanded', 'false');
     }
@@ -280,4 +282,71 @@
         this.setAttribute('aria-expanded', 'true');
     }
     }
-    items.forEach((item) => item.addEventListener('click', toggleAccordion));
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+// EMAIL JS CONTACT FORM 
+// User: sekharababups@gmail.com 
+// PW: Dt7@2021
+
+function Send() {
+    if (document.getElementById("name").value == "") {
+        alert("Please enter your name");
+        document.getElementById("name").focus();
+        return false;
+    }
+    if (document.getElementById("email").value == "") {
+        alert("Please enter your email address");
+        document.getElementById("email").focus();
+        return false;
+    }
+    if (document.getElementById("phone").value == "") {
+        alert("Please enter your phone number");
+        document.getElementById("phone").focus();
+        return false;
+    }
+    if (document.getElementById("subject").value == "") {
+        alert("Please enter the subject");
+        document.getElementById("subject").focus();
+        return false;
+    }
+    if (document.getElementById("message").value == "") {
+        alert("Please enter your message");
+        document.getElementById("message").focus();
+        return false;
+    }
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    const serviceID = "service_dolczhj";
+    const templateID = "template_itewwbr";
+    // emailjs.send("Service_ID", "Template_ID", formData)
+    emailjs.send(serviceID, templateID, params)
+        .then(function(response) {
+            console.log('Email sent successfully:', response.status, response.text);
+            alert("Thank you, " + params.name + "! Your message has been sent successfully.");
+            console.log(JSON.stringify(params, null, 2));
+            document.getElementById("contact-info").reset();
+        }, function(error) {
+            console.error("Email sending failed:", error);
+            alert("Sorry ...!, " + params.name + ". Oops! Something went wrong. Please try again later.");
+        });
+    return false;
+  /* 
+  // Email js Template Form Design Code
+    <p>&nbsp;</p>
+    <p>You got a new message from {{name}}:</p>
+        <p>Email: {{email}}</p>
+    <p>Phonenumber: {{phone}}</p>
+    <p>Subject: {{subject}}</p>
+    <p>Message:</p>
+    <p style="padding: 12px; font-style: italic;">{{message}}</p>
+    <p>&nbsp;</p>
+  */
+}
+

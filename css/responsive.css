@@ -149,7 +149,7 @@
         height: 480px;
     }
     .logo img {
-        width: 90px;
+        width: 100%;
     }
     /* header .orange-btn {
         background-color: transparent;
@@ -418,15 +418,15 @@
     .mean-container .mean-bar::after {
         color: #fff;
         content: "";
-        background-image: url(../img/Logo.png);
+        background-image: url(../img/logo-sekarspeaks.png);
         width: 70%;
         height: 100%;
-        left: 20px;
+        left: 5%;
         position: absolute;
-        top: 15px;
+        top: 10%;
         background-repeat: no-repeat;
         background-position: top left;
-        background-size: 100px 40px;
+        background-size: auto;
         z-index: -1;
     }
 
@@ -621,6 +621,7 @@
 
     .home-contact-icon-container {
         padding-left: 10px;
+        margin-top: 10%;
     }
 
     .about-two-img {

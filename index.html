@@ -8,7 +8,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>SEKHARA BABU P.S. Portfolio</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicons.ico">
     <!-- Fonts (google font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
                 <div class="header-wrapper d-flex justify-content-between align-items-center">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="img/Logo.png" alt="logo">
+                            <img src="img/logo-sekarspeaks.png" alt="logo">
                         </a>
                     </div>
                     <div class="header-menu-wrapper main-menu">
@@ -106,7 +106,7 @@
         </header>
         <!-- end header -->
         <!-- start banner -->
-        <section class="home-banner position-relative">
+        <section id="home" class="home-banner position-relative">
             <div class="container-fluid custom-container">
                 <div class="row align-items-center">
                     <div class="col">
@@ -237,7 +237,7 @@
         </section>
         <!-- end partners -->
         <!-- start about me -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -1930,41 +1930,35 @@
                                 </h2>
                             </div>
                             <div class="home-contact-info-container row row-mobile-margin mt-50 align-items-start">
-                                <div class="col-12 col-md-8">
-                                    <form>
+                                <div class="col-12 col-lg-8">
+                                    <form id="contact-info">
                                         <div class="row g-4">
                                             <div class="col-12 col-sm-6">
-                                                <input type="text" class="form-control home-contact-input"
-                                                    placeholder="Your Name">
+                                                <input type="text" id="name" class="form-control home-contact-input" placeholder="Your Name">
                                             </div>
                                             <div class="col-12 col-sm-6">
-                                                <input type="email" class="form-control home-contact-input"
-                                                    placeholder="Your Email">
+                                                <input type="email" id="email" class="form-control home-contact-input" placeholder="Your Email">
                                             </div>
                                             <div class="col-12 col-sm-6">
-                                                <input type="tel" class="form-control home-contact-input"
-                                                    placeholder="Your phone">
+                                                <input type="tel" id="phone" class="form-control home-contact-input" placeholder="Your phone">
                                             </div>
                                             <div class="col-12 col-sm-6">
-                                                <input type="text" class="form-control home-contact-input"
-                                                    placeholder="Subject">
+                                                <input type="text" id="subject" class="form-control home-contact-input" placeholder="Subject">
                                             </div>
                                             <div class="col-12">
-                                                <textarea placeholder="Message"
-                                                    class="form-control home-contact-input"></textarea>
+                                                <textarea id="message" placeholder="Message" class="form-control home-contact-input"></textarea>
                                             </div>
                                             <div class="col-12">
-                                                <div class="col-12">
-                                                    <button type="submit"
-                                                        class="btn orange-btn btn_effect row-mobile-margin mt-30"><span
-                                                            class="z-1 position-relative">Send Me
-                                                            Message</span></button>
-                                                </div>
+                                                <button type="button" class="btn orange-btn btn_effect row-mobile-margin mt-30">
+                                                    <span class="z-1 position-relative" onclick="Send();"> 
+                                                        Send Me Message
+                                                    </span>
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                                <div class="col-12 col-md-4 home-contact-icon-container">
+                                <div class="col-12 col-lg-4 home-contact-icon-container">
                                     <div class="row row-mobile-margin gy-3 gy-sm-0">
                                         <div class="col-12 d-flex align-items-center">
                                             <div class="mr-10">
@@ -1975,8 +1969,9 @@
                                             <div class="about-complete-project">
                                                 <h4 class="fw-500 black-color h4">Address</h4>
                                                 <p class="fw-400 secondary-black">
-                                                    <a href="geo:377749">
-                                                        202 Dog Hill Lane Beloit, KS 67420
+                                                    <a href="https://goo.gl/maps/Jy6kWkULAPRHS5Ws5">
+                                                        Row House 1, New GMC # 10 Gruha Shreni Row Houses, 
+                                                        1st Ln, Navabharath Nagar, Guntur, Andhra Pradesh 522006
                                                     </a>
                                                 </p>
                                             </div>
@@ -1990,7 +1985,7 @@
                                             <div class="about-years-experience">
                                                 <h4 class="fw-500 black-color h4">Phone</h4>
                                                 <p class="fw-400 secondary-black">
-                                                    <a href="tel:01589634755">+01589634755</a>
+                                                    <a href="tel:9246416611">+91 92464 16611</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -2003,8 +1998,8 @@
                                             <div class="about-years-experience">
                                                 <h4 class="fw-500 black-color h4">Email</h4>
                                                 <p class="fw-400 secondary-black">
-                                                    <a href="mailto:credesign@gmail.com">
-                                                        credesign@gmail.com
+                                                    <a href="mailto:cmd@sikharanirmaan.com">
+                                                        cmd@sikharanirmaan.com
                                                     </a>
                                                 </p>
                                             </div>
@@ -2024,19 +2019,20 @@
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-4 mt-5 mt-lg-0">
+                            <div class="col-12 col-sm-6 col-md-5 col-lg-5 mt-5 mt-lg-0">
                                 <div class="footer-col-one">
-                                    <img src="img/LogoWhite.png" class="footer-logo" alt="footer logo">
+                                    <img src="img/logo-sekarspeaks-white.png" class="footer-logo" alt="footer logo">
                                     <p class="p text-white line-height-7 mb-30 footer-col-one-texts">
-                                        At vero eos et accusamus et iusto odio dign ducimus qui blanditiis praesentium
-                                        volup deleniti atque corrupti quos dolores et molestias excepturi sint occaecati
+                                        Shekarababu is dedicated to delivering exceptional design solutions that resonate with your audience. 
+                                        Our mission is to craft engaging and visually appealing experiences that captivate and inspire. 
+                                        If you have any questions or would like to discuss a project, feel free to contact me!
                                     </p>
                                     <h3 class="h3 fw-500 line-height-3 text-white fw-500">
-                                        credesign@gmail.com
+                                        cmd@sikharanirmaan.com
                                     </h3>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 mt-5 mt-lg-0">
                                 <h4 class="h4 fw-500 text-white">
                                     Explore Link
                                 </h4>
@@ -2052,37 +2048,15 @@
                                             <a class="fw-400 p line-height-7 text-white" href="#portfolio">Portfolio</a>
                                         </li>
                                         <li class="footer-link-item">
-                                            <a class="fw-400 p line-height-7 text-white" href="#blog">Blog</a>
+                                            <a class="fw-400 p line-height-7 text-white" href="#testimonial">Testimonial</a>
+                                        </li>
+                                        <li class="footer-link-item">
+                                            <a class="fw-400 p line-height-7 text-white" href="#contact">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-lg-0">
-                                <h4 class="h4 fw-500 text-white">
-                                    My Services
-                                </h4>
-                                <div class="footer-col-links">
-                                    <ul class="footer-col-link-container">
-                                        <li class="footer-link-item">
-                                            <a class="fw-400 p line-height-7 text-white" href="#services">UI/UX
-                                                Design</a>
-                                        </li>
-                                        <li class="footer-link-item">
-                                            <a class="fw-400 p line-height-7 text-white" href="#services">Mobile
-                                                App</a>
-                                        </li>
-                                        <li class="footer-link-item">
-                                            <a class="fw-400 p line-height-7 text-white" href="#services">Graphics
-                                                Design</a>
-                                        </li>
-                                        <li class="footer-link-item">
-                                            <a class="fw-400 p line-height-7 text-white" href="#services">Web
-                                                Developer</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4 mt-5 mt-lg-0">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-5 mt-lg-0">
                                 <h4 class="h4 fw-500 text-white">
                                     Follow me
                                 </h4>
@@ -2121,15 +2095,18 @@
                                 <div class="footer-contact">
                                     <div class="footer-contact-item d-flex align-items-center mb-20">
                                         <i class="fa-solid fa-location-dot footer-contact-icon mr-10 orange-color"></i>
-                                        <p class="p text-white line-height-7 fw-400">
-                                            202 Dog Hill Lane Beloit,KS 67420
+                                        <p>
+                                           <a class="p text-white line-height-7 fw-400" href="https://goo.gl/maps/Jy6kWkULAPRHS5Ws5">
+                                                Row House 1, New GMC # 10 Gruha Shreni Row Houses, 
+                                                1st Ln, Navabharath Nagar, Guntur, Andhra Pradesh 522006.
+                                            </a>
                                         </p>
                                     </div>
                                     <div class="footer-contact-item d-flex align-items-center mb-20">
                                         <i class="fa-solid fa-phone-volume footer-contact-icon mr-10 orange-color"></i>
                                         <p>
-                                            <a class="p text-white line-height-7 fw-400" href="tel:1-800-915-6270">
-                                                1-800-915-6270
+                                            <a class="p text-white line-height-7 fw-400" href="tel:+91 9246416611">
+                                                +91 92464 16611
                                             </a>
                                         </p>
                                     </div>
@@ -2144,7 +2121,7 @@
                             <div class="row">
                                 <div class="footerbottom-left col-12 col-sm-5 col-md-6 text-start">
                                     <p class="p text-white line-height-7">
-                                        All rights reserved &copy; 2024 <a href="#" target="_blank">Sekhara Babu PS</a>
+                                        All rights reserved &copy; 2024 <a href="#" target="_blank">Sekarspeaks</a>
                                     </p>
                                 </div>
                                 <div class="footerbottom-right col-12 col-sm-7 col-md-6">
@@ -2200,6 +2177,14 @@
     <script src="js/jquery.counterup.min.js"></script>
     <!-- Main JS script -->
     <script src="js/main.js"></script>
+    <!-- Email JS Contact Form CDN Link-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // emailjs.init("Account Public Key");
+            emailjs.init("9tT-36MC70bjngFoH");
+        })();
+    </script>
 </body>
 
 </html>
