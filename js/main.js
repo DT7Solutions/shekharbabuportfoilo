@@ -21,10 +21,10 @@
                 items: 1
             },
             600: {
-                items: 2
+                items: 2.5
             },
             1000: {
-                items: 4
+                items: 5
             }
         }
     })

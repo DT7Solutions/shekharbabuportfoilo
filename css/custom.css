@@ -169,10 +169,10 @@
     display: inline-block;
     left: 35%;
 }
-.journey-topic-item::before {
+/* .journey-topic-item::before {
     left: 35% !important;
     top: 150% !important;
-}
+} */
 .journey-topic-item {
     border: 2px dashed #ff6b00;
     border-radius: 25px;
@@ -181,18 +181,22 @@
 }
 .journey-topic-one {
     top: 0%;
+    left: 39%;
     margin-left: 13%;
 }
 .journey-topic-two {
-    top: 12.5%;
+    top: 13%;
+    left: 39%;
     margin-left: 13%;
 }
 .journey-topic-three {
-    top: 25%;
+    top: 26%;
+    left: 39%;
     margin-left: 13%;
 }
 .journey-topic-four {
-    bottom: 47.5%;
+    bottom: 45.5%;
+    left: 39%;
     margin-left: 13%;
 }
 .journey-content {
@@ -262,10 +266,12 @@
     border-radius: 25px;
     background-color: #FFFAF7;
     flex-wrap: wrap;
+    margin-top: 0px;
 }
 .testimonial .owl-carousel .owl-item img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 .partners .sub-heading p{
     color: #ff6b00;
@@ -349,7 +355,7 @@
 .accordion .accordion-item button[aria-expanded='true'] {
     border-bottom: none
 }
-.accordion button .accordion-title {
+.accordion button[aria-expanded='true'] .accordion-title {
     padding: 2.5%;
 }
 .accordion .accordion-content p {
@@ -400,6 +406,9 @@
     margin: 5% 5% 0% 10%;
     max-width: 950px;
 }
+.contact-form .orange-btn {
+    border-radius: 25px;
+}
 .home-contact-input {
     background: #fff3ea;
     padding: 10px;
@@ -420,6 +429,23 @@
     margin: 0.75% 2.5% 1% 2.5%;
     border-radius: 25px;
 }
+.footer-logo {
+    margin-bottom: 2.5%;
+}
+.footer-col-link-container {
+    list-style-type: none;
+    margin-top: 10%;
+}
+.footer-link-item {
+    margin-bottom: 2.5%;
+}
+.footer-social-container {
+    margin-top: 10%;
+}
+.footer-social-item-2 {
+    margin-right: 5%;
+}
+
 
 
 /* responsive code for big medium laptop*/
@@ -438,21 +464,133 @@
         margin-left: 25%;
         text-align: center;
     }
+    .home-banner-text-col {
+        padding: 0% 10% 0% 5%;
+    }
+    .home-contact .sub-heading{
+        width: 15%;
+    }
+    .about .section-heading {
+        margin-left: 2.5%;
+    }
+    .about-text-top .about-text {
+        margin: 2.5%;
+    }
+    .portfolio-massonary-container {
+        padding: 5%;
+    }
     .portfolio-massonary-items:last-child {
         display: none;
+    }
+    .home-banner-img-col {
+        text-align: start !important;
+    }
+    .home-contact-icon-container .row-mobile-margin{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .contact-address,
+    .contact-phone,
+    .contact-mail{
+        max-width: 650px;
+        min-height: 150px;
+        padding: 1% 5%;
+        margin: 0% 5%;
+    }
+    .contact-form{
+        margin: 5% 0% 0% 5%;
+        max-width: 650px;
+    }
+    .footer-social-item-2 {
+        margin-right: 15px;
+    }
+    .footer-top {
+        padding: 5% 0% 7.5% 0% !important;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .mobile-menu{
+        display: block !important;
+    }
+    .nav-menu{
+        display: none !important;
     }
 }
 /* responsive code for mobile */
 @media only screen and (max-width: 576px) {
+    .home-banner .home-banner-img{
+        scale: 0.85;
+        margin: 0% -5%;
+    }
+    .home-one-title{
+        font-size: 30px !important;
+    }
+    .about .sub-heading {
+        width: 25%;
+        border-radius: 20px;
+    }
     .about-card, .about-card2,
     .about-check, .about-check2{
-        background-color: transparent;
+        width: 50%;
+    }
+    .about-check,
+    .about-check2 {
+        padding-bottom: 5%;
+    }
+    .about-check-item {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .about-check-icon {
+        margin: 0%;
     }
     .about-card:before,
     .about-card2:before {
         background: none;
     }
+    .about-text-col {
+        padding: 0% 5%;
+    }
+    .about .row-mobile-margin{
+        margin: 0% 2.5%;
+    }
+    .journey-img {
+        scale: 0.75;
+    }
+    .journey-first-item{
+        padding: 10% 5% 0% 2.5%!important;
+    }
+    .bg-custom-theme{
+        width: 97.5%;
+    }
+    .faqs{
+        padding: 2.5% 0% 5%!important;
+    }
+    .accordion {
+        margin: 0% 2.5%;
+        padding: 2.5% !important;
+    }
     .portfolio-massonary-items:last-child {
         display: block;
+    }
+    .home-contact .sub-heading{
+        width: 30%;
+    }
+    .home-contact-icon-container .row-mobile-margin{
+        gap: 10px;
+    }
+    .contact-address,
+    .contact-phone,
+    .contact-mail{
+        max-width: 300px;
+        min-height: 150px;
+        padding: 1% 5%;
+        margin: 0% 0% 0% 10%;
+    }
+    .contact-form{
+        margin: 5% 0% 0% 10%;
+        max-width: 300px;
     }
 }
