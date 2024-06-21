@@ -267,11 +267,160 @@
     width: 60px;
     height: 60px;
 }
-
-
 .partners .sub-heading p{
     color: #ff6b00;
 }
+.partner-card {
+    background: #ffffff;
+    border: 1px solid #FFE2D1;
+    border-radius: 15px;
+    height: 100px;
+}
+.partner-card img {
+    scale: 0.75;
+}
+.portfolio {
+    background: #fff3ea;
+}
+.portfolio .sub-heading p{
+    color: #ff6b00;
+}
+.portfolio-massonary-container {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 2.5%;
+}
+.portfolio-massonary-items img {
+    border-radius: 25px;
+}
+.portfolio-card-overlay {
+    border-radius: 25px;
+}
+.faqs .sub-heading {
+    background-color: #fff3ea;
+    width: 7.5%;
+    border-radius: 20px;
+}
+.faqs .sub-heading p{
+    color: #ff6b00;
+    margin-left: 25%;
+}
+.accordion {
+    background: #fff3ea;
+    border-radius: 30px;
+    padding: 0.5% 2.5%;
+    margin-top: 5%;
+}
+.accordion .accordion-item {
+    background: #ffffff;
+    border-radius: 30px;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    width: 22px;
+    height: 22px;
+    border: none;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: #ff6b00;
+    border-radius: 5px;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 10%;
+    left: 92.5%;
+    width: 2px;
+    height: 20px;
+    background: #ff6b00;
+    border-radius: 5px;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: none
+}
+.accordion button .accordion-title {
+    padding: 2.5%;
+}
+.accordion .accordion-content p {
+    margin: 2.5%;
+}
+.home-contact{
+    background: #fff3ea;
+}
+.home-contact .sub-heading{
+    background-color: #ffffff;
+    width: 10%;
+    border-radius: 20px;
+}
+.home-contact .sub-heading P{
+    color: #ff6b00;
+    margin-left: 15%;
+}
+.home-contact-icon-container {
+    padding-left: 120px;
+}
+.contact-address,
+.contact-phone,
+.contact-mail{
+    max-width: 300px;
+    background: #ffffff;
+    padding: 1.25%;
+    border-radius: 35px;
+    margin: 0% 1%;
+}
+.contact-address h4,
+.contact-phone h4,
+.contact-mail h4{
+    color: #ff6b00;
+}
+.light-orange-bg-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    background: #ffffff;
+    padding: 2.5%;
+    border-radius: 25px;
+    margin: 5% 5% 0% 10%;
+    max-width: 950px;
+}
+.home-contact-input {
+    background: #fff3ea;
+    padding: 10px;
+    border: 1px solid #FFE2D1;
+    border-radius: 15px;
+    line-height: 1.7;
+}
+.footer{
+    background-color: #ffffff;
+}
+.footer-top{
+    background-color: var(--black-color);
+    margin: 2% 2.5% 0.75% 2.5%;
+    border-radius: 25px;
+}
+.footer-bottom{
+    background-color: var(--black-color);
+    margin: 0.75% 2.5% 1% 2.5%;
+    border-radius: 25px;
+}
+
 
 /* responsive code for big medium laptop*/
 @media only screen and (max-width: 1396px) {
@@ -289,6 +438,9 @@
         margin-left: 25%;
         text-align: center;
     }
+    .portfolio-massonary-items:last-child {
+        display: none;
+    }
 }
 /* responsive code for mobile */
 @media only screen and (max-width: 576px) {
@@ -300,5 +452,7 @@
     .about-card2:before {
         background: none;
     }
-
+    .portfolio-massonary-items:last-child {
+        display: block;
+    }
 }
