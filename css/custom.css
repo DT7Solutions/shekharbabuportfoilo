@@ -91,6 +91,8 @@
     align-items: flex-start;
     border-top-left-radius:25px;
     border-top-right-radius:25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     border-right: 10px Solid #ffffff;
 }
 .about-card:before {
@@ -105,7 +107,7 @@
     background-size: contain;
     z-index: 99;
 }
-.about-card2:before {
+.about-card:after {
     content: "";
     position: absolute;
     top: 0;
@@ -116,32 +118,6 @@
     background: url('../img/Union.png') no-repeat;
     background-size: contain;
     z-index: 99;
-}
-.about-check {
-    background-color:#fff3ea;
-    border-right: 10px Solid #ffffff;
-}
-.about-check.first {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-.about-card2{
-    background-color:#fff3ea;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    border-top-left-radius:25px;
-    border-top-right-radius:25px;
-    border-left: 10px Solid #ffffff;
-}
-.about-check2 {
-    background-color:#fff3ea;
-    border-left: 10px Solid #ffffff;
-}
-.about-check2.second {
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 .about-check-item {
     background-color: #ffffff;
@@ -181,22 +157,22 @@
 }
 .journey-topic-one {
     top: 0%;
-    left: 39%;
+    left: 40%;
     margin-left: 13%;
 }
 .journey-topic-two {
     top: 13%;
-    left: 39%;
+    left: 40%;
     margin-left: 13%;
 }
 .journey-topic-three {
     top: 26%;
-    left: 39%;
+    left: 40%;
     margin-left: 13%;
 }
 .journey-topic-four {
     bottom: 45.5%;
-    left: 39%;
+    left: 40%;
     margin-left: 13%;
 }
 .journey-content {
@@ -220,7 +196,7 @@
     z-index: 0;
 }
 .journey-content p {
-    margin-left: 20px;
+    margin-left: 2.5%;
     text-indent: 0;
     text-align: justify;
 }
@@ -456,12 +432,12 @@
 @media only screen and (max-width: 992px) {
     .journey .sub-heading {
         background-color: #ffffff;
-        width: 20%;
+        width: 30%;
         border-radius: 20px;
     }
     .journey .sub-heading p{
         color: #ff6b00;
-        margin-left: 25%;
+        margin-left: 20%;
         text-align: center;
     }
     .home-banner-text-col {
@@ -508,6 +484,13 @@
     .footer-top {
         padding: 5% 0% 7.5% 0% !important;
     }
+    .journey-first-item .row{
+        margin-left: 0%;
+    }
+    .journey-first-item .row .journey-img{
+        margin-left: -0.5%;
+        margin-bottom: 1%;
+    }
 }
 @media only screen and (max-width: 780px) {
     .mobile-menu{
@@ -530,25 +513,13 @@
         width: 25%;
         border-radius: 20px;
     }
-    .about-card, .about-card2,
-    .about-check, .about-check2{
-        width: 50%;
+    .about-card:before {
+        top: 2.5%;
+        right: 5%;
     }
-    .about-check,
-    .about-check2 {
-        padding-bottom: 5%;
-    }
-    .about-check-item {
-        display: flex !important;
-        flex-direction: column;
-        align-items: flex-start !important;
-    }
-    .about-check-icon {
-        margin: 0%;
-    }
-    .about-card:before,
-    .about-card2:before {
-        background: none;
+    .about-card:after {
+        top: 52.5%;
+        right: 5%;
     }
     .about-text-col {
         padding: 0% 5%;
@@ -560,7 +531,15 @@
         scale: 0.75;
     }
     .journey-first-item{
-        padding: 10% 5% 0% 2.5%!important;
+        padding: 5% 5% 0% 2.5%!important;
+    }
+    .journey-first-item .row .journey-img{
+        margin-left: -2.5%;
+        margin-bottom: 1%;
+    }
+    .duration {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
     .bg-custom-theme{
         width: 97.5%;
