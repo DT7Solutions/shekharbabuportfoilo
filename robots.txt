@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+
+Allow: /
+
+Sitemap: https://sekharspeaks.com/sitemap.xml
