@@ -6,6 +6,16 @@
         meanMenuContainer: '.mobile-menu'
     });
 
+    window.addEventListener('scroll', function() {
+        const navMenu = document.getElementById('nav-menu');
+        if (window.scrollY > 100) {
+            navMenu.classList.add('fixed');
+        } else {
+            navMenu.classList.remove('fixed');
+        }
+    });
+    
+
     // testimonial carousel
     $('.testimonial-list-container .owl-carousel').owlCarousel({
         loop: true,
