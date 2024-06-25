@@ -178,7 +178,7 @@
 }
 .journey-content {
     border: 20px solid #FF6B0033;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 2.5%;
 }
 .journey-border {
@@ -193,7 +193,7 @@
     width: 100%;
     height: 90%;
     background-color: #FF6B0022;
-    border-radius: 50px;
+    border-radius: 30px;
     z-index: 0;
 }
 .journey-content p {
@@ -354,13 +354,13 @@
     padding-left: 120px;
 }
 .contact-address,
-.contact-phone,
 .contact-mail{
-    max-width: 300px;
+    max-width: 450px;
+    width: 100%;
     background: #ffffff;
     padding: 1.25%;
     border-radius: 35px;
-    margin: 0% 1%;
+    margin: 0% 2.5%;
 }
 .contact-address h4,
 .contact-phone h4,
@@ -470,14 +470,14 @@
     .contact-address,
     .contact-phone,
     .contact-mail{
-        max-width: 650px;
+        max-width: 90%;
         min-height: 150px;
-        padding: 1% 5%;
-        margin: 0% 5%;
+        padding: 2.5% 5%;
+        margin: 1.5% 0%;
     }
     .contact-form{
-        margin: 5% 0% 0% 5%;
-        max-width: 650px;
+        margin: 5%;
+        max-width: 90%;
     }
     .footer-social-item-2 {
         margin-right: 15px;
@@ -545,8 +545,15 @@
     .bg-custom-theme{
         width: 97.5%;
     }
+    .testimonial .sub-heading {
+        width: 30%;
+    }
     .faqs{
         padding: 2.5% 0% 5%!important;
+    }
+    .faqs .section-heading-middle h2{
+        padding: 0% 0.5%;
+        margin-bottom: 2.5%;
     }
     .accordion {
         margin: 0% 2.5%;
@@ -564,13 +571,13 @@
     .contact-address,
     .contact-phone,
     .contact-mail{
-        max-width: 300px;
+        max-width: 90%;
         min-height: 150px;
-        padding: 1% 5%;
-        margin: 0% 0% 0% 10%;
+        padding: 1.5% 5%;
+        margin: 1.5% 0%;
     }
     .contact-form{
-        margin: 5% 0% 0% 10%;
-        max-width: 300px;
+        margin: 5%;
+        max-width: 90%;
     }
 }
