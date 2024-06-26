@@ -70,9 +70,18 @@
 .quote{
     display: block;
     margin: 2.5% 5%;
+    padding: 5% 0% 2.5% !important;
 }
 .quote h5{
     text-indent: 2.5em;
+}
+.quote .sub-heading {
+    background-color: #fff3ea;
+    width: 15%;
+    border-radius: 20px;
+}
+.quote .sub-heading p{
+    color: #ff6b00;
 }
 .about .sub-heading {
     background-color: #fff3ea;
@@ -441,7 +450,7 @@
 @media only screen and (max-width: 992px) {
     .journey .sub-heading {
         background-color: #ffffff;
-        width: 30%;
+        width: 15%;
         border-radius: 20px;
     }
     .journey .sub-heading p{
@@ -451,6 +460,10 @@
     }
     .home-banner-img {
         scale: 1;
+    }
+    .home-banner-img-col {
+        margin-bottom: 5% !important;
+        margin-top: -10%;
     }
     .home-banner-text-col {
         margin-top: -15%;
@@ -464,6 +477,9 @@
     }
     .about-text-top .about-text {
         margin: 2.5%;
+    }
+    .about-image-col {
+        margin: 5% 0%;
     }
     .portfolio-massonary-container {
         padding: 5%;
@@ -535,10 +551,15 @@
         right: 5%;
     }
     .about-text-col {
-        padding: 0% 5%;
+        padding: 0% 2.5%;
     }
     .about .row-mobile-margin{
         margin: 0% 2.5%;
+    }
+    .journey .sub-heading {
+        background-color: #ffffff;
+        width: 30%;
+        border-radius: 20px;
     }
     .journey-img {
         scale: 0.75;
