@@ -55,16 +55,24 @@
     border-radius: 50%;
 }
 .home-banner-img {
-    border: 20px solid #fff;
-    border-radius: 50px;
+    /* border: 10px solid #fff;
+    border-radius: 25px; */
+    scale: 1.25;
 }
 .about-img {
-    border: 20px solid #fff3ea;
-    border-radius: 50px;
+    border: 10px solid #fff3ea;
+    border-radius: 25px;
 }
 .img-overlay::after,
 .img-overlay-full::after {
-    border-radius: 50px;
+    border-radius: 25px;
+}
+.quote{
+    display: block;
+    margin: 2.5% 5%;
+}
+.quote h5{
+    text-indent: 2.5em;
 }
 .about .sub-heading {
     background-color: #fff3ea;
@@ -177,8 +185,8 @@
     margin-left: 13%;
 }
 .journey-content {
-    border: 20px solid #FF6B0033;
-    border-radius: 30px;
+    border: 10px solid #FF6B0033;
+    border-radius: 25px;
     padding: 2.5%;
 }
 .journey-border {
@@ -193,7 +201,7 @@
     width: 100%;
     height: 90%;
     background-color: #FF6B0022;
-    border-radius: 30px;
+    border-radius: 25px;
     z-index: 0;
 }
 .journey-content p {
@@ -207,12 +215,12 @@
 .duration {
     color: #ff6b00;
     position: absolute;
-    top: -0.25%;
+    top: 0%;
     right: 5%;
     background-color: #FF6B0033;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 2.5%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0.75% 1.5%;
     z-index: 99;
 }
 .journey-img {
@@ -441,7 +449,11 @@
         margin-left: 20%;
         text-align: center;
     }
+    .home-banner-img {
+        scale: 1;
+    }
     .home-banner-text-col {
+        margin-top: -15%;
         padding: 0% 10% 0% 5%;
     }
     .home-contact .sub-heading{
@@ -539,8 +551,7 @@
         margin-bottom: 1%;
     }
     .duration {
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
+        padding: 1% 5%;
     }
     .bg-custom-theme{
         width: 97.5%;
