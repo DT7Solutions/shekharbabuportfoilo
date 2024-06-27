@@ -69,7 +69,7 @@
 }
 .quote{
     display: block;
-    margin: 2.5% 5%;
+    margin: 2.5% 2.5% 0% 0%;
     padding: 5% 0% 2.5% !important;
 }
 .quote h5{
@@ -357,6 +357,7 @@
 }
 .home-contact{
     background: #fff3ea;
+    padding: 2.5% 0%;
 }
 .home-contact .sub-heading{
     background-color: #ffffff;
@@ -397,8 +398,7 @@
     background: #ffffff;
     padding: 2.5%;
     border-radius: 25px;
-    margin: 5% 5% 0% 10%;
-    max-width: 950px;
+    margin: 5% 7.5%;
 }
 .contact-form .orange-btn {
     border-radius: 25px;
@@ -472,6 +472,13 @@
     .home-contact .sub-heading{
         width: 15%;
     }
+    .quote{
+        margin: 2.5% 1.5%;
+        padding: 5% 0% 2.5% !important;
+    }
+    .quote .section-heading {
+        margin-left: 0% !important;
+    }
     .about .section-heading {
         margin-left: 2.5%;
     }
@@ -504,8 +511,16 @@
         margin: 1.5% 0%;
     }
     .contact-form{
-        margin: 5%;
-        max-width: 90%;
+        margin: 2.5%;
+    }
+    .accordion button .icon {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        right: -12.5%;
+        width: 22px;
+        height: 22px;
+        border: none;
     }
     .footer-social-item-2 {
         margin-right: 15px;
@@ -607,9 +622,5 @@
         min-height: 150px;
         padding: 1.5% 5%;
         margin: 1.5% 0%;
-    }
-    .contact-form{
-        margin: 5%;
-        max-width: 90%;
     }
 }
