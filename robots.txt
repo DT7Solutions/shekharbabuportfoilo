@@ -1,7 +1,15 @@
 User-agent: *
 Disallow: /private/
 Disallow: /admin/
+Disallow: /index.html
 
-Allow: /
+
+Allow: /$
+Allow: /#about$
+Allow: /#journey$
+Allow: /#portfolio$
+Allow: /#testimonial$
+Allow: /#contact$
+Allow: /sitemap.xml$
 
 Sitemap: https://sekharspeaks.com/sitemap.xml
