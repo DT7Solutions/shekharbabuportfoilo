@@ -5,6 +5,7 @@ Disallow: /index.html
 
 
 Allow: /$
+Allow: /#home$
 Allow: /#about$
 Allow: /#journey$
 Allow: /#portfolio$
