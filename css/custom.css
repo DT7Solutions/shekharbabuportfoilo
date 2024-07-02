@@ -448,6 +448,19 @@
 }
 /* responsive code for tablet */
 @media only screen and (max-width: 992px) {
+    .mean-container .mean-bar {
+        background-color: transparent !important;
+    }
+    .mean-container a.meanmenu-reveal {
+        padding: 13px 25px 11px !important;
+    }
+    .mean-container a.meanmenu-reveal:before {
+        width: 37px !important;
+        left: 10px !important;
+    }
+    .mean-container a.meanmenu-reveal span {
+        margin-left: -5px !important;
+    }
     .journey .sub-heading {
         background-color: #ffffff;
         width: 15%;
@@ -546,6 +559,9 @@
 }
 /* responsive code for mobile */
 @media only screen and (max-width: 576px) {
+    .mean-container a.meanmenu-reveal {
+        padding: 20px 25px 11px !important;
+    }
     .home-banner .home-banner-img{
         scale: 0.85;
         margin: 0% -5%;
