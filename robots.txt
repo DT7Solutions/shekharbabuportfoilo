@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /private/
 Disallow: /admin/
-Disallow: /index.html
 
 
 Allow: /$
