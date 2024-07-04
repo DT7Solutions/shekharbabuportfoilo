@@ -451,6 +451,10 @@
     .mean-container .mean-bar {
         background-color: transparent !important;
     }
+    .mean-container .mean-bar::after,
+    .mean-container a.meanmenu-reveal {
+        animation: floatUpDown 1.5s 0.15 ease;
+    }
     .mean-container a.meanmenu-reveal {
         padding: 13px 25px 11px !important;
     }
