@@ -1,0 +1,36 @@
+
+
+/* Banner Section Slider */
+
+/* .banner-area .carousel-inner > .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(63.17% 68.09% at 64.51% 31.83%, rgba(10, 35, 62, 0) 0%, #0A233E 100%);
+    mix-blend-mode: multiply;
+    z-index: 1;
+} */
+.banner-area .top-pad .content {
+    padding-top: 30%;
+}
+.banner-area .content h3 {
+    margin-bottom: 15px;
+}
+.banner-area .content h2 {
+    margin-bottom: 10px;
+}
+.banner-area .content .lists {
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-area .about-items .info li {
+    align-items: flex-start;
+}
+.about-area .author .content .thumb {
+    margin-right: 0px;
+    padding-right: 15px;
+}
