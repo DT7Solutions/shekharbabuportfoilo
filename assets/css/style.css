@@ -1839,9 +1839,9 @@ body,
   transition: all 0.35s ease-in-out;
 }
 
-.about-area .features-items .single-item:nth-child(2n) .item i {
+/* .about-area .features-items .single-item:nth-child(2n) .item i {
   color: #666666;
-}
+} */
 
 .about-area .features-items .single-item .item:hover i {
   color: #ff4949;

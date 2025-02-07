@@ -14,7 +14,7 @@
     z-index: 1;
 } */
 .banner-area .top-pad .content {
-    padding-top: 30%;
+    padding-top: 10%;
 }
 .banner-area .content h3 {
     margin-bottom: 15px;
@@ -23,14 +23,97 @@
     margin-bottom: 10px;
 }
 .banner-area .content .lists {
+    display: none;
     margin-bottom: 10px;
 }
 
 /* About Us Section */
+.fixed-features .features-items {
+    top: -100px;
+    padding: 0%;
+    border-radius: 12px;
+}
+.about-area .about-items .item {
+    padding: 40px 20px;
+    display: block;
+}
+.about-area .about-content {
+    width: auto;
+}
 .about-area .about-items .info li {
     align-items: flex-start;
 }
 .about-area .author .content .thumb {
-    margin-right: 0px;
     padding-right: 15px;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.about-area .author .content .thumb img {
+    border: 1px solid #dddddd;
+}
+.about-area .author .signature {
+    border-left: 2px solid #939393;
+}
+@media only screen and (max-width: 991px) {
+    body, .banner-area, .banner-area div {
+        height: 100%;
+    }
+    .banner-area .carousel-control {
+        display: none;
+    }
+    nav.navbar.bootsnav .navbar-toggle {
+        font-size: 30px;
+        top: 2.5%;
+    }
+    .navbar.navbar-fixed .attr-nav > ul > li {
+        padding: 16px 0 !important;
+    }
+    .about-area .about-content .info {
+        padding-right: 15px;
+        text-align: justify;
+    }
+    .about-area .about-content .info li {
+        display: flex;
+        margin-bottom: 2.5%;
+        text-align: justify;
+    }
+    .about-area .author .content .thumb img {
+        width: 100%;
+        height: auto;
+        min-width: 40px;
+        min-height: 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .about-area .author {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-area .author .content {
+        display: flex;
+    }
+    .about-area .author .content .thumb {
+        padding-right: 5px;
+    }
+    .about-area .author .content .thumb img {
+        width: 60px !important;
+    }
+    .about-area .author .content .info h4 {
+        font-size: 16px;
+        margin-bottom: 0%;
+    }
+    .about-area .author .content .info span {
+        font-size: 14px;
+    }
+    .about-area .author .signature {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .about-area .author .signature img {
+        max-height: 40px;
+    }
+    .about-area .about-items .item {
+        padding: 20px 10px;
+    }
 }
