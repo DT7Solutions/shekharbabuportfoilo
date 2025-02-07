@@ -23,6 +23,26 @@
         visibleItems: 3
     });
 
+    /* ========== # Testimonial Slide For Testimonials Section =========== */
+    $('.testimonials').owlCarousel({
+       loop: false,
+       nav: false,
+       dots: true,
+       items: 1,
+       navText: [
+           "<i class='fa fa-angle-left'></i>",
+           "<i class='fa fa-angle-right'></i>"
+       ],
+    });
+
+    /* ========== # Goal Info For Fun Factor Init Section =========== */
+    $('.timer').countTo();
+    $('.fun-fact').appear(function() {
+        $('.timer').countTo();
+    }, {
+        accY: -100
+    });
+
 
     });
 })(jQuery);
