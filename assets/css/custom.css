@@ -117,3 +117,76 @@
         padding: 20px 10px;
     }
 }
+
+
+
+
+/* ============================================================== 
+     # Services
+=================================================================== */
+.carousel-services-area .carousel-service-items .thumb, 
+.carousel-services-area .carousel-service-items .info {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.carousel-services-area .carousel-service-items .info {
+  padding: 80px;
+}
+.carousel-services-area .carousel-service-items .info p {
+    text-align: justify;
+}
+.carousel-services-area .carousel-service-items .info h2 {
+  font-weight: 600;
+  margin-top: -7px;
+}
+.carousel-services-area .carousel-service-items .info h5 {
+  color: #ff4949;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.carousel-services-area .carousel-service-items .info a {
+  margin-top: 5px;
+}
+.carousel-services-area .carousel-service-items.owl-carousel .owl-dots {
+  bottom: 30px;
+  margin: 0 0 0 80px;
+  position: absolute;
+  right: 30px;
+}
+.carousel-services-area .carousel-service-items.owl-carousel .owl-dots .owl-dot span {
+  background: #ffffff none repeat scroll 0 0;
+  border: 3px solid #ff4949;
+  height: 20px;
+  width: 20px;
+}
+.carousel-services-area .carousel-service-items.owl-carousel .owl-dots .owl-dot.active span,
+.carousel-services-area .carousel-service-items.owl-carousel .owl-dots .owl-dot span:hover {
+  background: #ff4949 none repeat scroll 0 0;
+}
+@media only screen and (max-width: 991px) {
+    .carousel-services-area .carousel-service-items .thumb, 
+    .carousel-services-area .carousel-service-items .info {
+      display: block;
+      width: 100%;
+    }
+    .carousel-services-area .carousel-service-items .thumb {
+      min-height: 500px;
+    }
+    .carousel-services-area .carousel-service-items .info {
+      padding: 50px 15px;
+      text-align: center;
+    }
+    .carousel-services-area .carousel-service-items.owl-carousel .owl-dots {
+      margin: 0;
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .carousel-services-area .carousel-service-items .thumb {
+      min-height: 300px;
+    }
+}
