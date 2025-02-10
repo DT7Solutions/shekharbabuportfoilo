@@ -147,7 +147,7 @@ a img, iframe {
 
 p {
   color: #666666;
-  margin: 0 0 15px;
+  /* margin: 0 0 15px; */
   text-transform: none;
   font-weight: 400;
 }
@@ -1956,7 +1956,7 @@ body,
 
 .about-area .info h2 {
   font-weight: 700;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   margin-top: -5px;
 }
 
@@ -2053,7 +2053,7 @@ body,
 .about-area .about-items .info ul {
   list-style: none;
   margin: 0;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   overflow: hidden;
 }
 
@@ -2354,7 +2354,7 @@ body,
 .about-area .author {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .about-area .author .signature img {
@@ -2467,12 +2467,12 @@ body,
 
 .choose-us-area .info h2 {
     font-weight: 700;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .choose-us-area ul {
     list-style: none;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 0;
     margin-bottom: 0;
 }
@@ -2483,7 +2483,7 @@ body,
 
 .choose-us-area ul li {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .choose-us-area ul li:last-child {
@@ -2492,33 +2492,34 @@ body,
 
 .choose-us-area ul li p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .choose-us-area ul li i {
     display: inline-block;
     font-size: 30px;
-    margin-right: 35px;
+    margin-right: 25px;
     position: relative;
     color: #ffffff;
     background: #111d30;
     border-radius: 8px;
     text-align: center;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
 }
 
 .choose-us-area ul li i::after {
     position: absolute;
-    right: -15px;
-    top: -10px;
+    right: -5px;
+    top: -5px;
     content: "\4e";
     font-family: 'ElegantIcons';
     background: #ff4949;
     font-size: 13px;
-    height: 30px;
-    width: 30px;
-    line-height: 25px;
+    height: 20px;
+    width: 20px;
+    line-height: 15px;
     border-radius: 50%;
     border: 3px solid #ffffff;
     box-shadow: 1px 4px 20px -2px rgb(0 0 0 / 10%);
@@ -2529,7 +2530,7 @@ body,
     font-weight: 700;
     text-transform: inherit;
     color: #232323;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .choose-us-area .thumb-box {

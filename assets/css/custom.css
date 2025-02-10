@@ -1,8 +1,28 @@
+.default-padding {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.default-padding-bottom {
+    padding-bottom: 5%;
+}
+.default-padding-top {
+    padding-top: 5%;
+}
 
 .default-padding-top-90 {
     padding-top: 90px;
 }
-
+.default-padding-top-60 {
+    padding-top: 60px;
+}
+.default-padding-top-30 {
+    padding-top: 30px;
+}
+.site-heading {
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-top: -5px;
+}
 
 /* ====================== # Banner Slider Section ========================= */
 
@@ -17,32 +37,94 @@
     mix-blend-mode: multiply;
     z-index: 1;
 } */
+.navbar {
+    min-height: 40px;
+    max-height: 65px;
+}
+.navbar img, .top-bar-area img {
+    height: 45px;
+}
+nav.navbar.bootsnav .navbar-brand {
+    padding: 10px;
+}
+nav.navbar.bootsnav ul.nav > li > a {
+    padding: 25px 10px;
+}
+.attr-nav > ul > li {
+    padding: 16px 0;
+    font-size: 18px;
+}
+nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 50px;
+}
+nav.navbar .quote-btn {
+    display: none;
+}
+.banner-area {
+    height: 90%;
+}
 .banner-area .top-pad .content {
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 .banner-area .content h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .banner-area .content h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 54px;
+    line-height: 56px;
 }
-.banner-area .content .lists {
-    display: none;
-    margin-bottom: 10px;
+.banner-area .content h2 br {
+    display: block;
+}
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    .banner-area {
+        height: 92.5%;
+    }
+    .banner-area .top-pad .content {
+        padding-top: 2.5%;
+        padding-left: 7.5%;
+    }
+    .banner-area .content h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .banner-area .content h2 {
+        margin-bottom: 5px;
+        font-size: 44px;
+        line-height: 48px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .banner-area .content h2 br {
+        display: none;
+    }
+    .banner-area .top-pad .content {
+        padding-left: 2.5%;
+    }
 }
 
 /* ====================== # About Us Section ========================= */
+.fixed-features {
+    margin-top: -5%;
+}
 .fixed-features .features-items {
-    top: -100px;
+    top: -25px;
     padding: 0%;
     border-radius: 12px;
 }
 .about-area .about-items .item {
-    padding: 40px 20px;
+    padding: 30px 20px;
     display: block;
+}
+.about-area .about-info li i, .about-area .about-items .item i {
+    font-size: 40px;
 }
 .about-area .about-content {
     width: auto;
+    margin-top: 0%;
 }
 .about-area .about-items .info li {
     align-items: flex-start;
@@ -58,6 +140,9 @@
 }
 .about-area .author .signature {
     border-left: 2px solid #939393;
+}
+.about-area .about-items .thumb-box .thumb::after {
+    display: none;
 }
 @media only screen and (max-width: 991px) {
     body, .banner-area, .banner-area div {
@@ -90,6 +175,9 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .fixed-features .features-items {
+        top: -110px;
+    }
     .about-area .author {
         display: flex;
         justify-content: space-between;
@@ -130,10 +218,11 @@
   vertical-align: middle;
 }
 .carousel-services-area .carousel-service-items .info {
-  padding: 80px;
+  padding: 30px 50px;
 }
 .carousel-services-area .carousel-service-items .info p {
     text-align: justify;
+    min-height: 150px;
 }
 .carousel-services-area .carousel-service-items .info h2 {
   font-weight: 600;
@@ -174,7 +263,7 @@
       min-height: 500px;
     }
     .carousel-services-area .carousel-service-items .info {
-      padding: 50px 15px;
+      padding: 50px 30px;
       text-align: center;
     }
     .carousel-services-area .carousel-service-items.owl-carousel .owl-dots {
@@ -182,6 +271,10 @@
       position: relative;
       right: 0;
       width: 100%;
+    }
+    .choose-us-area ul li {
+        margin-top: 2.5%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -251,7 +344,7 @@
 }
 .timeline-item--right {
     left: 50%;
-    padding: .625rem 0 .625rem 2.5rem;
+    padding: .25rem 0 .25rem 2.5rem;
 }
 .timeline-item--right:after {
     left: -11px;
@@ -269,7 +362,7 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
     display: block;
-    padding: 30px;
+    padding: 25px 15px;
     position: relative;
 }
 .timeline-content:after,
@@ -294,20 +387,20 @@
 }
 .timeline--horizontal {
     font-size: 0;
-    padding: 0 50px;
+    padding: 0 25px;
     overflow: hidden;
     white-space: nowrap;
 }
 .timeline--horizontal .timeline-divider {
     background-color: #ddd;
     display: block;
-    height: 4px;
-    left: 40px;
+    height: 2px;
+    left: 20px;
     position: absolute;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    right: 40px;
+    right: 20px;
     z-index: 1;
 }
 .timeline--horizontal .timeline-items {
@@ -319,7 +412,7 @@
 .timeline--horizontal .timeline-item {
     display: inline-block;
     left: 0;
-    padding: 0 0 2.5rem;
+    padding: 0 0 2rem;
     position: relative;
     -webkit-transition: none;
     -o-transition: none;
@@ -358,7 +451,7 @@
     top: 100%;
 }
 .timeline--horizontal .timeline-item:nth-child(even) {
-    padding: 2.5rem 0 0;
+    padding: 2rem 0 0;
 }
 .timeline--horizontal .timeline-item:nth-child(even):after {
     top: 0;
@@ -446,7 +539,7 @@
 }
 .timeline--mobile .timeline-item {
     left: 0;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 0;
     width: 100%;
 }
@@ -497,17 +590,43 @@
         top: -15px;
     }
 }
+.timeline-content h2,
+.timeline-content h3,
+.timeline-content h4,
+.timeline-content h5 {
+    font-weight: 600;
+}
+.timeline h4 { 
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 .timeline h5 {
     color: #ff4949;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
+.timeline h6 { 
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 .timeline p {
+    font-size: 15px;
+    line-height: 18px;
     margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+/* ====================== # Portfolio Section ========================= */
+.gallery-items-area button {
+    padding: 5px 10px;
+}
 
 /* ====================== # Testimonials Section ========================= */
 .testimonials-area {
@@ -638,4 +757,96 @@
 }
 .goal-info a {
   margin-top: 10px;
+}
+
+/* ====================== # FAQS Section ========================= */
+.acd-items .panel-heading .panel-title a {
+    display: block;
+    font-weight: 600;
+    padding: 14px 0 15px 10px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.acd-arrow .panel-group.symb .panel-heading a::after {
+    content: "\f107";
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+.faq-items .panel-body {
+    padding: 20px;
+}
+
+/* ====================== # Partners Section ========================= */
+.clients-area .site-heading h4::before {
+    position: relative;
+    top: 6px;
+    content: '';
+    background-color: #ffffff;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.clients-area .left-info h4 {
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.clients-area .clients-box .single-item {
+    background: #e7e7e7;
+    border-radius: 6px;
+    margin: 2.5%;
+}
+.clients-area .clients-box .single-item img {
+    height: 100px;
+}
+
+/* ====================== # Contact Section ========================= */
+.contact-area .address-items {
+    padding: 60px 50px;
+}
+.contact-area .contact-items .form-box textarea {
+    min-height: 150px;
+}
+
+/* ====================== # Footer Section ========================= */
+
+footer .link .widget-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer .link ul {
+    display: grid;
+    grid-template-columns: 75% 50%;
+}
+.footer-bottom {
+    padding: 20px 0 10px;
+}
+.footer-bottom p a {
+    font-weight: 800;
+}
+.footer-bottom p a:hover {
+    color: #ff4949;
+}
+.facebook-bg:hover{
+  background: #3B5998 !important;
+  border-radius: 50%;
+}
+.twitter-bg:hover{
+  background: #55ACEE !important;
+  border-radius: 50%;
+}
+.instagram-bg:hover{
+  background: #E4405F !important;
+  border-radius: 50%;
+}
+.linkedin-bg:hover{
+  background: #0A66C2 !important;
+  border-radius: 50%;
 }

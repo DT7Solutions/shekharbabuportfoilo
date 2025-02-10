@@ -328,7 +328,7 @@
          ===============================================*/
         $('.clients-carousel').owlCarousel({
             loop: false,
-            margin: 30,
+            margin: 0,
             nav: false,
             navText: [
                 "<i class='fa fa-angle-left'></i>",
@@ -341,10 +341,10 @@
                     items: 2
                 },
                 600: {
-                    items: 2
+                    items: 3
                 },
                 1000: {
-                    items: 3
+                    items: 4
                 }
             }
         });
