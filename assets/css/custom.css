@@ -24,6 +24,16 @@
     margin-top: -5px;
 }
 
+/* ====================== # Breadcrumb Section ========================= */
+.breadcrumb-area {
+    margin: 2.5% 0%;
+    padding: 15px 0;
+    overflow: hidden;
+}
+.page-title-area {
+    padding: 150px 0 50px;
+}
+
 /* ====================== # Banner Slider Section ========================= */
 
 /* .banner-area .carousel-inner > .item::before {
@@ -129,6 +139,20 @@ nav.navbar .quote-btn {
 .about-area .about-items .info li {
     align-items: flex-start;
 }
+.about-area .about-items .info li i {
+    display: inline-block;
+    text-align: center;
+    color: rgba(255, 68, 80, 1);
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+.about-area .about-items .thumb {
+    padding-right: 0px;
+}
+.about-area .about-items .thumb img {
+    border-radius: 8px;
+}
 .about-area .author .content .thumb {
     padding-right: 15px;
     margin-right: 0%;
@@ -208,6 +232,12 @@ nav.navbar .quote-btn {
     .about-area .about-items .item {
         padding: 20px 10px;
     }
+}
+
+/* ====================== # Why Choose Us Section ========================= */
+.choose-us-area .thumb-box img:first-child {
+    width: 80%;
+    border-radius: 8px;
 }
 
 /* ====================== # Services Section ========================= */
