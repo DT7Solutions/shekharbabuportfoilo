@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+
+Allow: /assets/
+Allow: /images/
+Allow: /scripts/
+Allow: /styles/
+
+# Allow Googlebot to render JavaScript
+Allow: *.js
+Allow: *.css
+Allow: *.json
+Allow: *.jpg
+Allow: *.png
+Allow: *.svg
+Allow: *.webp
+
+# Disallow common dynamically generated query strings
+Disallow: /*?*
+Disallow: /*#*
+
+# Sitemap
+Sitemap: https://sekharspeaks.com/sitemap.xml
