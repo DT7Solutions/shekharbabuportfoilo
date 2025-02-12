@@ -1,3 +1,8 @@
+
+
+body {
+    font-size: 14px;
+}
 .default-padding {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -197,6 +202,10 @@ nav.navbar .quote-btn {
         min-width: 40px;
         min-height: 40px;
     }
+    .about-area .about-items .thumb { 
+        margin-top: -5%;
+        margin-bottom: 7.5%;
+    }
 }
 @media only screen and (max-width: 767px) {
     .fixed-features .features-items {
@@ -238,6 +247,11 @@ nav.navbar .quote-btn {
 .choose-us-area .thumb-box img:first-child {
     width: 80%;
     border-radius: 8px;
+}
+@media only screen and (max-width: 991px) {
+    .choose-us-area .thumb-box img:first-child {
+        width: 100%;
+    }
 }
 
 /* ====================== # Services Section ========================= */
@@ -628,19 +642,16 @@ nav.navbar .quote-btn {
 }
 .timeline h4 { 
     font-size: 20px;
-    margin-bottom: 5px;
 }
 .timeline h5 {
     color: #ff4949;
     font-size: 24px;
     font-weight: 600;
-    letter-spacing: 1px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 .timeline h6 { 
     font-size: 18px;
-    margin-bottom: 5px;
 }
 .timeline p {
     font-size: 15px;
@@ -651,6 +662,37 @@ nav.navbar .quote-btn {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.timeline-content .journey-img img {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 2.5%;
+    float: inline-end;
+}
+.timeline-content .journey-content p {
+    text-align: justify;
+}
+  
+@media only screen and (max-width: 991px) {
+    .timeline-content .journey-img img {
+        margin-bottom: 0%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .timeline-content .journey-img img {
+        float: none;
+    }
+    .timeline h4 { 
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .timeline h5 {
+        margin-bottom: 10px;
+    }
+    .timeline h6 { 
+        margin-bottom: 5px;
+    }
 }
 
 /* ====================== # Portfolio Section ========================= */
@@ -788,6 +830,11 @@ nav.navbar .quote-btn {
 .goal-info a {
   margin-top: 10px;
 }
+@media only screen and (max-width: 991px) {
+    .goal-achive .fun-factor {
+        margin-top: 5%;
+    }
+}
 
 /* ====================== # FAQS Section ========================= */
 .acd-items .panel-heading .panel-title a {
@@ -854,6 +901,9 @@ footer .link .widget-links {
 footer .link ul {
     display: grid;
     grid-template-columns: 75% 50%;
+}
+footer .contact li i {
+    margin-top: 0%;
 }
 .footer-bottom {
     padding: 20px 0 10px;
