@@ -2,6 +2,7 @@
 
 body {
     font-size: 14px;
+    text-align: justify;
 }
 .default-padding {
     padding-top: 5%;
@@ -93,6 +94,18 @@ nav.navbar .quote-btn {
 }
 .banner-area .content h2 br {
     display: block;
+}
+@media (max-width: 1023px) {
+    nav.navbar.bootsnav .navbar-toggle {
+        display: inline-block;
+        float: right;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    nav.navbar.bootsnav .navbar-brand {
+        float: left !important;
+        margin-left: -5% !important;
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
     .banner-area {
@@ -240,6 +253,9 @@ nav.navbar .quote-btn {
     }
     .about-area .about-items .item {
         padding: 20px 10px;
+    }
+    .about-area .about-items .info li {
+        text-align: justify;
     }
 }
 
