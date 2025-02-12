@@ -49,3 +49,17 @@
 
 
 /* ========== # Time Line Auto Play =========== */
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineItems = document.querySelector(".timeline-items");
+    const items = document.querySelectorAll(".timeline-item");
+
+    items.forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+            timelineItems.style.animationPlayState = "paused";
+        });
+        item.addEventListener("mouseleave", function () {
+            timelineItems.style.animationPlayState = "running";
+        });
+    });
+});
+

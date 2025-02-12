@@ -2,7 +2,6 @@
 
 body {
     font-size: 14px;
-    text-align: justify;
 }
 .default-padding {
     padding-top: 5%;
@@ -154,8 +153,12 @@ nav.navbar .quote-btn {
     width: auto;
     margin-top: 0%;
 }
+.about-area .about-items .info p {
+    text-align: justify;
+}
 .about-area .about-items .info li {
     align-items: flex-start;
+    text-align: justify;
 }
 .about-area .about-items .info li i {
     display: inline-block;
@@ -253,9 +256,6 @@ nav.navbar .quote-btn {
     }
     .about-area .about-items .item {
         padding: 20px 10px;
-    }
-    .about-area .about-items .info li {
-        text-align: justify;
     }
 }
 
@@ -689,8 +689,21 @@ nav.navbar .quote-btn {
 .timeline-content .journey-content p {
     text-align: justify;
 }
-  
+.timeline-items {
+    animation: scrollTimeline 20s linear infinite;
+}
+@keyframes scrollTimeline {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
 @media only screen and (max-width: 991px) {
+    .timeline-items {
+        animation: none;
+    }
     .timeline-content .journey-img img {
         margin-bottom: 0%;
     }
@@ -710,6 +723,7 @@ nav.navbar .quote-btn {
         margin-bottom: 5px;
     }
 }
+
 
 /* ====================== # Portfolio Section ========================= */
 .gallery-items-area button {
