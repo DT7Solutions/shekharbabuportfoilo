@@ -962,41 +962,41 @@
                         </div>
                     </div>
                     <div class="col-md-6 form-box">
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-forms">
+                            <input type="hidden" name="access_key" value="21464a50-7bd5-4044-b02d-d7d100b07112">
+                            <input type="hidden" name="from_name" value="Sekharspeaks Notification">
+                            <input type="hidden" name="replyto" value="cmd@sikharanirmaan.com">
+                            
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Your Full Name :" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="name" name="name" placeholder="Your Full Name :" type="text" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Your Phone Number :" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="phone" name="phone" placeholder="Your Phone Number :" type="text" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Your Email :" type="email">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="email" name="email" placeholder="Your Email :" type="email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="subject" name="subject" placeholder="Your Subject :" type="text">
-                                        <span class="alert-error"></span>
+                                        <input class="form-control" id="custom_subject" name="subject" placeholder="Your Subject :" type="text" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Your Message :"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Your Message :" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -1007,11 +1007,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
+                        </form> 
                     </div>
                 </div>
             </div>
@@ -1130,5 +1126,41 @@
     <script src="assets/js/custom.js"></script>
     <!-- ========== End JS Script ========== -->
 
+    <!-- ========== Web3forms Conatct From Submition =========== -->
+    <script>
+        const form = document.querySelector('.contact-forms');
+        form.addEventListener("submit", function (e) {
+            const formData = new FormData(form);
+            e.preventDefault();
+
+            var object = {};
+            formData.forEach((value, key) => {
+                object[key] = value;
+            });
+            var json = JSON.stringify(object);
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
+            })
+            .then(async (response) => {
+                const json = await response.json();
+                if (response.status == 200) {
+                    window.location.href = "https://web3forms.com/success";
+                } else {
+                    alert("Error: " + json.message);
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                alert("Something went wrong!");
+            })
+            .finally(() => form.reset());
+            });
+    </script>
 </body>
 </html>
