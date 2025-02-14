@@ -278,6 +278,7 @@ nav.navbar .quote-btn {
   vertical-align: middle;
 }
 .carousel-services-area .carousel-service-items .info {
+  background: #ffffff;
   padding: 30px 50px;
 }
 .carousel-services-area .carousel-service-items .info p {

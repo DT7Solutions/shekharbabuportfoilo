@@ -5,7 +5,8 @@
 
     /* ========== # Carousel Slide For Services Section =========== */
     $('.carousel-service-items').owlCarousel({
-        loop: false,
+        loop: true,
+        autoplay: true,
         nav: false,
         dots: true,
         items: 1,
