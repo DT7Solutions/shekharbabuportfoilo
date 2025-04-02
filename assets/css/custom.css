@@ -183,7 +183,11 @@ nav.navbar .quote-btn {
 .about-area .author .content .thumb img {
     border: 1px solid #dddddd;
 }
+.about-area .author .content .info h4 {
+    margin-bottom: 0px;
+}
 .about-area .author .signature {
+    display: none;
     border-left: 2px solid #939393;
 }
 .about-area .about-items .thumb-box .thumb::after {
