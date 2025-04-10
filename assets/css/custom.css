@@ -53,17 +53,23 @@ body {
     z-index: 1;
 } */
 .navbar {
-    min-height: 40px;
-    max-height: 65px;
+    /* min-height: 40px;
+    max-height: 65px; */
+    min-height: 60px;
+    max-height: 75px;
 }
-.navbar img, .top-bar-area img {
-    height: 45px;
+.navbar img, .top-bar-area img,
+footer .f-item img {
+    /* height: 45px; */
+    height: 60px;
+    width: 200px;
 }
 nav.navbar.bootsnav .navbar-brand {
     padding: 10px;
 }
 nav.navbar.bootsnav ul.nav > li > a {
-    padding: 25px 10px;
+    /* padding: 25px 10px; */
+    padding: 30px 10px;
 }
 .attr-nav > ul > li {
     padding: 16px 0;
@@ -77,7 +83,8 @@ nav.navbar .quote-btn {
     display: none;
 }
 .banner-area {
-    height: 90%;
+    /* height: 90%; */
+    height: 95%;
 }
 .banner-area .top-pad .content {
     padding-top: 5%;
